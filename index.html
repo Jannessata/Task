@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Входной контроль на Frontend</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/style.css">
+<body>
+    <div class="container">
+        <div class="block">
+            <h4 class="title">Задать вопрос</h4>
+                <div class="text_area">
+                    <form action="https://60376bfd5435040017722533.mockapi.io/form." method="post" class="feedback" >
+                        <div class="feedback_group">
+                            <label for=""></label>
+                            <input class="input" required  type="text" placeholder="Фамилия Имя Отчество *" pattern="[А-Яа-я-Ёё]{50}">
+                         </div>
+                        
+                         <div class="feedback_group">
+                            <label for=""></label>
+                            <input class="input" required type="tel" placeholder="Телефон *" >
+                        </div>
+                
+                        <div class="feedback_group">
+                            <label for=""></label>
+                            <input class="input" type="email" placeholder="Email">
+                        </div>
+                        <button type="submit" class="btn">Отправить запрос</button>
+                    </form>
+                </div>
+        </div> 
+    </div>   
+</body>
+</html>
